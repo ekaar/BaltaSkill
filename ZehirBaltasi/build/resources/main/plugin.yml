@@ -1,0 +1,6 @@
+name: ZehirBaltasi
+version: '1.0-SNAPSHOT'
+main: ekrem.plugins.zehirBaltasi.ZehirBaltasi
+api-version: '1.21'
+author: "ekrem"
+
