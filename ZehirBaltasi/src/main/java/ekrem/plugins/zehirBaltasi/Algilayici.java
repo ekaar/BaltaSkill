@@ -31,7 +31,7 @@ public class Algilayici implements Listener {
             List<Entity> yakinindakiYaratiklar = oyuncu.getNearbyEntities(5, 3, 5);
             for (Entity varlik : yakinindakiYaratiklar) {
                 if (varlik instanceof Monster canavar) {
-                    canavar.addPotionEffect(new org.bukkit.potion.PotionEffect(PotionEffectType.POISON, 5, 1));
+                    canavar.addPotionEffect(new org.bukkit.potion.PotionEffect(PotionEffectType.POISON, 100, 1));
                     Vector itmeYonu = oyuncu.getLocation().getDirection();
                     itmeYonu.setY(0).normalize().multiply(1.5);
                     canavar.getWorld().spawnParticle(Particle.EXPLOSION,canavar.getLocation(), 1);
